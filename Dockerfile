@@ -33,7 +33,7 @@ ARG BIOFORMATS2RAW="0.7.0"
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-      libblosc1 libvips libtiff-tools openjdk-17-jre-headless procps && \
+      libblosc1 libvips libtiff-tools openjdk-17-jre-headless procps zip unzip && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
